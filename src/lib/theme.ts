@@ -1,0 +1,1 @@
+export const themeInitScript = `(function(){try{var saved=localStorage.getItem('imperial-theme');var theme=saved==='light'||saved==='dark'?saved:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=theme;document.documentElement.style.colorScheme=theme;}catch{document.documentElement.dataset.theme='light';}})();`;
